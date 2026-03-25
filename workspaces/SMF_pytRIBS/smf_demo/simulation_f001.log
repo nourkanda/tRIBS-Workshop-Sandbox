@@ -11,7 +11,7 @@ tRIBS Version 5.3.0, Summer 2025
 
 
 
-Part 1: Read Input Parameters from 'SMF_f05.in'
+Part 1: Read Input Parameters from 'SMF_f001.in'
 ---------------------------------------------------
 Parameter =   OPTGROUNDWATER			1
 Parameter =   OPTSPATIAL			0
@@ -69,8 +69,8 @@ Parameter =   HYDROMETSTATIONS			../smf_init_data/met/Master_Met.sdf
 Parameter =   TEMPLAPSE			-0.0065
 Parameter =   PRECLAPSE			0
 Parameter =   HILLALBOPT			0
-Parameter =   OUTFILENAME			results/SMF_f05
-Parameter =   OUTHYDROFILENAME			results/SMF_f05
+Parameter =   OUTFILENAME			results/SMF_f001
+Parameter =   OUTHYDROFILENAME			results/SMF_f001
 Parameter =   OUTHYDROEXTENSION			mrf
 Parameter =   NODEOUTPUTLIST			data/model/pnodes.dat
 Parameter =   HYDRONODELIST			
@@ -173,8 +173,8 @@ Hydrograph array size: 		495
 
 Flow Output Files:
 
-Hydrograph File Name: 		'results/SMF_f05'
-Hydrograph Outlet Name: 		         SMF_f05
+Hydrograph File Name: 		'results/SMF_f001'
+Hydrograph Outlet Name: 		         SMF_f001
 Hydrograph File Extension: 	mrf
 
 Channel Characteristics:
@@ -211,7 +211,7 @@ Total Number of Nodes: 		3585
 tResample: Making interior polygons...
 
 
-Part 5: Creating Output Files from 'SMF_f05.in'
+Part 5: Creating Output Files from 'SMF_f001.in'
 ------------------------------------------
 
 Output Files:
@@ -310,8 +310,8 @@ Hydrologic Simulation begins...
 
 
 
-Creating Hydrograph Output: 'results/SMF_f050480_00.mrf'
-Creating Runoff Type Output: 'results/SMF_f050480_00.rft'
+Creating Hydrograph Output: 'results/SMF_f0010480_00.mrf'
+Creating Runoff Type Output: 'results/SMF_f0010480_00.rft'
 
 	HOUR = 480	MINUTE = 0
 

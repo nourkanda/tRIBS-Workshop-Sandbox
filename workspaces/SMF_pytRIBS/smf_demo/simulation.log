@@ -301,11 +301,11 @@ Hydrologic Simulation begins...
  tRIBS Water Balance Calculations
 
  Basin Rainfall = 0.000000 (m3)
- Basin Evaporation = 131.869724 (m3)
+ Basin Evaporation = 98.422430 (m3)
  Basin Runoff = 0.000000 (m3)
  Basin Canopy Storage = 0.000000 (m3)
- Basin Unsaturated Zone Storage = 1633.395136 (m3)
- Basin Saturated Zone Storage = 96.567799 (m3)
+ Basin Unsaturated Zone Storage = 1467.948464 (m3)
+ Basin Saturated Zone Storage = 96.687381 (m3)
 -----------------------------------
 
 

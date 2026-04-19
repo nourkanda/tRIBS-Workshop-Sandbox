@@ -11,14 +11,14 @@ tRIBS Version 5.3.0, Summer 2025
 
 
 
-Part 1: Read Input Parameters from 'SMF.in'
+Part 1: Read Input Parameters from 'SMF_continuous.in'
 ---------------------------------------------------
 Parameter =   OPTGROUNDWATER			1
 Parameter =   OPTSPATIAL			0
 Parameter =   OPTINTERHYDRO			0
 Parameter =   OPTHEADER			1
-Parameter =   STARTDATE			08/01/2014/00/00
-Parameter =   RUNTIME			480
+Parameter =   STARTDATE			07/01/2014/00/00
+Parameter =   RUNTIME			2208
 Parameter =   TIMESTEP			3.75
 Parameter =   GWSTEP			30
 Parameter =   METSTEP			60
@@ -40,7 +40,7 @@ Parameter =   WIDTHINTERPOLATION			0
 Parameter =   OPTEVAPOTRANS			1
 Parameter =   OPTINTERCEPT			2
 Parameter =   GFLUXOPTION			2
-Parameter =   OPTSNOW			1
+Parameter =   OPTSNOW			0
 Parameter =   MINSNTEMP			-50
 Parameter =   SNLIQFRAC			0.065
 Parameter =   OPTRADSHELT			0
@@ -62,15 +62,15 @@ Parameter =   LANDTABLENAME			data/model/land/land_use_params.ldt
 Parameter =   LANDMAPNAME			data/model/land/LandUse.asc
 Parameter =   GWATERFILE			data/model/soil/InitGW_95pct_mm.asc
 Parameter =   OPTRADSHELT			0
-Parameter =   GAUGESTATIONS			../smf_init_data/met/Master_Precip.sdf
+Parameter =   GAUGESTATIONS			../smf_init_data/met/Master_continuous_Precip.sdf
 Parameter =   RAINDISTRIBUTION			0
 Parameter =   BEDROCKFILE			data/model/soil/SOLUS_Bedrock_m.asc
-Parameter =   HYDROMETSTATIONS			../smf_init_data/met/Master_Met.sdf
+Parameter =   HYDROMETSTATIONS			../smf_init_data/met/Master_continuous_Met.sdf
 Parameter =   TEMPLAPSE			-0.0065
 Parameter =   PRECLAPSE			0
 Parameter =   HILLALBOPT			0
-Parameter =   OUTFILENAME			results/SMF
-Parameter =   OUTHYDROFILENAME			results/SMF
+Parameter =   OUTFILENAME			results/SMF_continuous
+Parameter =   OUTHYDROFILENAME			results/SMF_continuous
 Parameter =   OUTHYDROEXTENSION			mrf
 Parameter =   NODEOUTPUTLIST			data/model/pnodes.dat
 Parameter =   HYDRONODELIST			
@@ -82,12 +82,12 @@ Parameter =   OPTVIZ			0
 Input File Keywords Checked...
 
 Start TIME: 	YEAR	MONTH	DAY	HOUR	MINUTE
-		2014	8	1	0	0
+		2014	7	1	0	0
 
-Total TIME:	 480 hours
+Total TIME:	 2208 hours
 
 End TIME: 	YEAR	MONTH	DAY	HOUR	MINUTE
-		2014	8	21	0	0
+		2014	10	1	0	0
 
 Output INTERVAL: 			1 hours
 
@@ -169,12 +169,12 @@ Set reach numbers...
 
 Hillslope velocity: 		0.020000 m/sec
 Stream velocity: 		1.200000 m/sec
-Hydrograph array size: 		495
+Hydrograph array size: 		2223
 
 Flow Output Files:
 
-Hydrograph File Name: 		'results/SMF'
-Hydrograph Outlet Name: 		         SMF
+Hydrograph File Name: 		'results/SMF_continuous'
+Hydrograph Outlet Name: 		         SMF_continuous
 Hydrograph File Extension: 	mrf
 
 Channel Characteristics:
@@ -186,7 +186,7 @@ Channel width: 			Variable
 Channel widths determined from geomorphic relations...
 Parameter =   OPTRESERVOIR			0.000000
 Parameter =   TIMESTEP			3.750000
-Parameter =   RUNTIME			480.000000
+Parameter =   RUNTIME			2208.000000
 
 
 Part 4: Creating Resampling Object
@@ -211,7 +211,7 @@ Total Number of Nodes: 		3585
 tResample: Making interior polygons...
 
 
-Part 5: Creating Output Files from 'SMF.in'
+Part 5: Creating Output Files from 'SMF_continuous.in'
 ------------------------------------------
 
 Output Files:
@@ -248,11 +248,11 @@ HydroNodeList File  not found.
 Creating Rainfall Setup...
 Rainfall Source: 		Raingauge Stations
 
-Reading Rain Gauge Station File '../smf_init_data/met/Master_Precip.sdf'...
+Reading Rain Gauge Station File '../smf_init_data/met/Master_continuous_Precip.sdf'...
 
-Reading RainGauge Data File '../smf_init_data/met/precip_SMF_1.mdf'...
+Reading RainGauge Data File '../smf_init_data/met/precip_SMF_continuous_1.mdf'...
 
-Reading RainGauge Data File '../smf_init_data/met/precip_SMPHQ_2.mdf'...
+Reading RainGauge Data File '../smf_init_data/met/precip_SMPHQ_continuous_2.mdf'...
 
 Creating EvapoTranspiration Setup...
 
@@ -281,11 +281,11 @@ Node of Interest ID: 	1547 has been set up...
 
 Node of Interest ID: 	3082 has been set up...
 
-Reading HydroMeteorological Station File '../smf_init_data/met/Master_Met.sdf'...
+Reading HydroMeteorological Station File '../smf_init_data/met/Master_continuous_Met.sdf'...
 
-Reading HydroMeteorological Data File '../smf_init_data/met/met_SMF_1.mdf'...
+Reading HydroMeteorological Data File '../smf_init_data/met/met_SMF_continuous_1.mdf'...
 
-Reading HydroMeteorological Data File '../smf_init_data/met/met_SMPHQ_2.mdf'...
+Reading HydroMeteorological Data File '../smf_init_data/met/met_SMPHQ_continuous_2.mdf'...
 
 Using ID Land-Use Map
 
@@ -301,19 +301,19 @@ Hydrologic Simulation begins...
  tRIBS Water Balance Calculations
 
  Basin Rainfall = 0.000000 (m3)
- Basin Evaporation = 93.095235 (m3)
+ Basin Evaporation = 4.672088 (m3)
  Basin Runoff = 0.000000 (m3)
  Basin Canopy Storage = 0.000000 (m3)
- Basin Unsaturated Zone Storage = 1438.901880 (m3)
- Basin Saturated Zone Storage = 96.697599 (m3)
+ Basin Unsaturated Zone Storage = 1438.863448 (m3)
+ Basin Saturated Zone Storage = 96.762425 (m3)
 -----------------------------------
 
 
 
-Creating Hydrograph Output: 'results/SMF0480_00.mrf'
-Creating Runoff Type Output: 'results/SMF0480_00.rft'
+Creating Hydrograph Output: 'results/SMF_continuous2208_00.mrf'
+Creating Runoff Type Output: 'results/SMF_continuous2208_00.rft'
 
-	HOUR = 480	MINUTE = 0
+	HOUR = 2208	MINUTE = 0
 
 Simulation completed...
 
